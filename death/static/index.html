@@ -1,0 +1,84 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>死神语录</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mobile.css' %}" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="{% static 'js/mobile.js' %}"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="/index" class="logo">
+			<img src="{% static 'images/logo.jpg' %}" alt="">
+		</a>
+		<ul id="navigation">
+			<li class="selected">
+				<a href="/index">首页</a>
+			</li>
+			<li>
+				<a href="/about">个人简历</a>
+			</li>
+			<li>
+				<a href="/gallery">学习历程</a>
+			</li>
+			<li>
+				<a href="/blog">博客</a>
+			</li>
+			<li>
+				<a href="/contact">登陆</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<div id="featured">
+			<img src="{% static 'images/the-beacon.jpg' %}" alt="">
+			<div>
+				<h2>失去的在也没有拿回来的资格</h2>
+				<span>就像泼出去的水</span>
+				<span>你能有收回来的余地么?</span>
+				<span>送给所有人,包括我自己,好好珍惜当下的所有所有!</span>
+				<a href="/blog-single-post" class="more">死神语录</a>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<a href="/gallery">
+					<img src="{% static 'images/the-beacon.jpg' }%" alt="">
+					<span>学习历程</span>
+				</a>
+			</li>
+			<li>
+				<a href="/gallery">
+					<img src="{% static 'images/the-actor.jpg' %}" alt="">
+					<span>python</span>
+				</a>
+			</li>
+			<li>
+				<a href="/gallery">
+					<img src="{% static 'images/the-nerd.jpg' %}" alt="">
+					<span>django</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="footer">
+		<div>
+			<p></p>
+			<ul>
+				<li>
+					<a href="" id="twitter">菜鸟教程</a>
+				</li>
+				<li>
+					<a href="goolge" id="facebook"></a>
+				</li>
+				<li>
+					<a href="www.baidu.com" id="googleplus"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
