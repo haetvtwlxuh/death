@@ -27,4 +27,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-handler500='death.views.error404'
+handler500=views.error404

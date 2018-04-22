@@ -37,4 +37,4 @@ def blogs(request):
 	return render(request,'blog-single-post.html')
 
 def error404(request):
-	return render(request,'404.html')
+	return render(rrquest,'404.html')

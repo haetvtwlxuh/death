@@ -1,6 +1,6 @@
-{% extends "index.html" %}
 {% load static %}
-{% block title %}人间简介{% endblock %}
+{% extends "index.html" %}
+{% block title %}dasds{% endblock %}
 {% block body %}
 		<h1><span>死神</span></h1>
 		<div>

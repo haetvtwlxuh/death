@@ -1,53 +1,9 @@
-{% load static %}
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>死神说的话</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/mobile.css' %}" media="screen and (max-width : 568px)">
-	<script type="text/javascript" src="{% static 'js/mobile.js' %}"></script>
-</head>
-<body>
-	<div id="header">
-		<a href="/index" class="logo">
-			<img src="{% static 'images/logo.jpg' %}" alt="">
-		</a>
-		<ul id="navigation">
-			<li>
-				<a href="/index">首页</a>
-			</li>
-			<li>
-				<a href="/about">个人简历</a>
-			</li>
-			<li>
-				<a href="/gallery">学习历程</a>
-			</li>
-			<li>
-				<a href="/blog">博客</a>
-			</li>
-			<li class="selected">
-				<a href="/contact">死神语录</a>
-			</li>
-		</ul>
-	</div>
-	<div id="body">
+{% extends "index.html" %}
+{% block title %}语录{% endblock %}
+{% block body %}
 		<h1><span>死神说过的话</span></h1>
-		<form action="/contact">
-			<input type="text" name="fname" id="fname" value="name">
-			<input type="text" name="address" id="address" value="address">
-			<input type="text" name="email" id="email" value="email">
-			<input type="text" name="phone" id="phone" value="phone number">
-			<textarea name="message" id="message">message</textarea>
-			<input type="submit" name="send" id="send" value="send">
-		</form>
-	</div>
-	<div id="footer">
-		<div>
-			<ul>
-			</ul>
-		</div>
-	</div>
-</body>
-</html>
+		{% for x in lang %}
+			<hr/>
+			<h2>{{ x.title }}</h2>
+		{% endfor %}
+{% endblock %}
