@@ -1,9 +1,0 @@
-{% extends "index.html" %}
-{% block title %}语录{% endblock %}
-{% block body %}
-		<h1><span>死神说过的话</span></h1>
-		{% for x in lang %}
-			<hr/>
-			<h2>{{ x.title }}</h2>
-		{% endfor %}
-{% endblock %}
